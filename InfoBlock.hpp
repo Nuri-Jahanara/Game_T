@@ -1,0 +1,10 @@
+#pragma once
+
+
+
+#ifndef UNTITLED_INFOBLOCK_HPP
+#define UNTITLED_INFOBLOCK_HPP
+
+
+
+#endif // UNTITLED_INFOBLOCK_HPP
