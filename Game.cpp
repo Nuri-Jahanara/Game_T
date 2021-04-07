@@ -21,7 +21,7 @@ texture(), tSeparationLine(), tBlock(nullptr), tGrid(), tHighscore(), tElapsedTi
 	if (!texture.loadFromFile("Tetrominos.png")) {
 		std::cout << "Game:Game()-could not loadtTexture\n";
 	};
-	tGrid == std::make_unique<Grid>(sf::Vector2i{ 10,18 }, *this);
+	tGrid = std::make_unique<Grid>(sf::Vector2i{ 10,18 }, *this);
 
 	createGameBlocks();
 }

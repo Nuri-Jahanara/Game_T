@@ -30,7 +30,7 @@ GBlocks::GBlocks(sf::Texture& texture, int id) :
 }
 void::GBlocks::rotate() {
     //Store state of Block in case rotation turns out to be invalid
-    previousBlock == tBlock;
+    previousBlock = tBlock;
     if (tID == 0) { //Square does not need to rotate
         return;
     }

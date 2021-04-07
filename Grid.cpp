@@ -56,3 +56,34 @@ void Grid::draw(sf::RenderWindow& window) {
 		}
 	}
 }
+
+// Implement these methods
+void Grid::update(const sf::Time& date)
+{
+
+}
+
+void Grid::clean()
+{
+
+}
+
+bool Grid::isOccupied(std::array<sf::Vector2i, 4>block)
+{
+	for (sf::Vector2i currentBlock : block) {
+		auto field = getField(currentBlock.x, currentBlock.y);
+		if (field->tOccupied)
+			return true;
+	}
+	return false;
+}
+
+void Grid::printGrid()
+{
+
+}
+
+Field* Grid::getField(int x, int y)
+{
+	return tField[convert2D_to_1D(x, y)].get();
+}
