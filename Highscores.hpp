@@ -11,7 +11,6 @@ class Highscores {
 public:
 	Highscores();
 	Highscores(const Highscores& other) = delete;
-	Highscores(const Highscores& other) = delete;
 
 	void draw(sf::RenderWindow& window);
 	void reset();
